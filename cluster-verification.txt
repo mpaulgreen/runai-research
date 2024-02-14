@@ -1,0 +1,68 @@
+cluster-version: 2.15.9
+runai-public: |
+  version: 2.15.9
+  runaiConfigStatus:
+    conditions:
+    - type: DependenciesFulfilled
+      status: "True"
+      observedgeneration: 1
+      lasttransitiontime: "2024-02-14T14:35:51Z"
+      reason: dependencies_fulfilled
+      message: Dependencies are fulfilled
+    - type: Deployed
+      status: "True"
+      observedgeneration: 1
+      lasttransitiontime: "2024-02-14T14:36:08Z"
+      reason: deployed
+      message: Resources Deployed
+    - type: Available
+      status: "True"
+      observedgeneration: 1
+      lasttransitiontime: "2024-02-14T14:36:24Z"
+      reason: available
+      message: System Available
+    - type: Reconciled
+      status: "True"
+      observedgeneration: 1
+      lasttransitiontime: "2024-02-14T14:36:24Z"
+      reason: reconciled
+      message: Reconciliation completed successfully
+    observedgeneration: 1
+  dependencies:
+    required:
+      gpu-stack:
+        available: true
+        components:
+          amd:
+            available: false
+            reason: daemonset amd-gpu-device-plugin-daemonset not found in the cluster
+          nvidia:
+            available: true
+            components:
+              nvidia-metrics:
+                available: true
+    optional:
+      knative:
+        available: true
+        components:
+          hpa:
+            available: true
+          knative:
+            available: true
+          kourier:
+            available: true
+      mpi:
+        available: false
+        reason: mpi operator not found in the cluster
+      pytorch:
+        available: false
+        reason: training operator not found in the cluster; resource (kubeflow.org/v1,
+          Kind=PyTorchJob) not found on the cluster
+      tensorflow:
+        available: false
+        reason: training operator not found in the cluster; resource (kubeflow.org/v1,
+          Kind=TFJob) not found on the cluster
+      xgboost:
+        available: false
+        reason: training operator not found in the cluster; resource (kubeflow.org/v1,
+          Kind=XGBoostJob) not found on the cluster

@@ -1,0 +1,7 @@
+preinstall-diagnostics-darwin-amd64
+readme.md
+runai-gcr-secret.yaml
+gpg_key_public.txt
+run-ai-controlplane.txt
+runai-dataplane.txt
+.idea

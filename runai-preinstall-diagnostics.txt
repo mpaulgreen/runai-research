@@ -1,0 +1,846 @@
+[LOG] initializing Kubernetes client...
+[LOG] successfully initialized Kubernetes client
+cleaning up previous deployment if it exists...
+waiting for all resources to be deleted...
+all resources were successfully deleted
+deploying runai diagnostics tool...
+
+[34m[TEST] running external cluster tests...[0m
+--------------------------------------------------
+
+[34m[TEST] Cluster Version[0m
+--------------------------------------------------
+[LOG] Kubernetes Cluster Version: v1.26.6+6bf3f75
+[LOG] Openshift Cluster Version: 4.13.9
+[32m[PASS][0m
+
+[34m[TEST] List Pods[0m
+--------------------------------------------------
+[LOG] Namespace/Name/Phase
+[LOG] knative-serving-ingress/3scale-kourier-gateway-79f8687765-7j9fl/Running
+[LOG] knative-serving-ingress/3scale-kourier-gateway-79f8687765-fjv98/Running
+[LOG] knative-serving-ingress/net-kourier-controller-696cffdfd9-d9dqh/Running
+[LOG] knative-serving-ingress/net-kourier-controller-696cffdfd9-dr9qb/Running
+[LOG] knative-serving/activator-6c757b9956-qmt9x/Running
+[LOG] knative-serving/activator-6c757b9956-rz7nk/Running
+[LOG] knative-serving/autoscaler-6d847f5d58-fc9nk/Running
+[LOG] knative-serving/autoscaler-6d847f5d58-m8lmq/Running
+[LOG] knative-serving/autoscaler-hpa-674d96f945-bxrfm/Running
+[LOG] knative-serving/autoscaler-hpa-674d96f945-qp5x4/Running
+[LOG] knative-serving/controller-6c855d467-gd2gd/Running
+[LOG] knative-serving/controller-6c855d467-jzl99/Running
+[LOG] knative-serving/domain-mapping-57688fd697-6pq4v/Running
+[LOG] knative-serving/domain-mapping-57688fd697-ccgbk/Running
+[LOG] knative-serving/domainmapping-webhook-74c948df44-dzp2c/Running
+[LOG] knative-serving/domainmapping-webhook-74c948df44-j2bnb/Running
+[LOG] knative-serving/storage-version-migration-serving-serving-1.10-1.31.0-6746n/Succeeded
+[LOG] knative-serving/webhook-86c964c989-56zzz/Running
+[LOG] knative-serving/webhook-86c964c989-57ps7/Running
+[LOG] nvidia-gpu-operator/gpu-feature-discovery-4pxxp/Running
+[LOG] nvidia-gpu-operator/gpu-feature-discovery-8s8pw/Running
+[LOG] nvidia-gpu-operator/gpu-feature-discovery-z88wb/Running
+[LOG] nvidia-gpu-operator/gpu-operator-794664f8f6-d8gzg/Running
+[LOG] nvidia-gpu-operator/nvidia-container-toolkit-daemonset-9pxbt/Running
+[LOG] nvidia-gpu-operator/nvidia-container-toolkit-daemonset-cjp4m/Running
+[LOG] nvidia-gpu-operator/nvidia-container-toolkit-daemonset-jptlg/Running
+[LOG] nvidia-gpu-operator/nvidia-cuda-validator-7bpr7/Succeeded
+[LOG] nvidia-gpu-operator/nvidia-cuda-validator-bxw8m/Succeeded
+[LOG] nvidia-gpu-operator/nvidia-cuda-validator-rhx9l/Succeeded
+[LOG] nvidia-gpu-operator/nvidia-dcgm-c4bw9/Running
+[LOG] nvidia-gpu-operator/nvidia-dcgm-exporter-wf2xm/Running
+[LOG] nvidia-gpu-operator/nvidia-dcgm-exporter-wr9k2/Running
+[LOG] nvidia-gpu-operator/nvidia-dcgm-exporter-xj8zg/Running
+[LOG] nvidia-gpu-operator/nvidia-dcgm-j85sx/Running
+[LOG] nvidia-gpu-operator/nvidia-dcgm-q8sdd/Running
+[LOG] nvidia-gpu-operator/nvidia-device-plugin-daemonset-gxvcj/Running
+[LOG] nvidia-gpu-operator/nvidia-device-plugin-daemonset-jf7fx/Running
+[LOG] nvidia-gpu-operator/nvidia-device-plugin-daemonset-kxfj7/Running
+[LOG] nvidia-gpu-operator/nvidia-driver-daemonset-413.92.202308091852-0-9ntf9/Running
+[LOG] nvidia-gpu-operator/nvidia-driver-daemonset-413.92.202308091852-0-lr5d4/Running
+[LOG] nvidia-gpu-operator/nvidia-driver-daemonset-413.92.202308091852-0-r85hf/Running
+[LOG] nvidia-gpu-operator/nvidia-node-status-exporter-gbzkp/Running
+[LOG] nvidia-gpu-operator/nvidia-node-status-exporter-j9ssd/Running
+[LOG] nvidia-gpu-operator/nvidia-node-status-exporter-prtq4/Running
+[LOG] nvidia-gpu-operator/nvidia-operator-validator-6g6c9/Running
+[LOG] nvidia-gpu-operator/nvidia-operator-validator-6nq97/Running
+[LOG] nvidia-gpu-operator/nvidia-operator-validator-tqdmh/Running
+[LOG] openshift-apiserver-operator/openshift-apiserver-operator-755cfb9b4c-txpmw/Running
+[LOG] openshift-apiserver/apiserver-f9d5c9bdf-gc5w4/Running
+[LOG] openshift-apiserver/apiserver-f9d5c9bdf-jm2gd/Running
+[LOG] openshift-apiserver/apiserver-f9d5c9bdf-ndz78/Running
+[LOG] openshift-authentication-operator/authentication-operator-567b547766-r59z9/Running
+[LOG] openshift-authentication/oauth-openshift-8569f45585-ddsjl/Running
+[LOG] openshift-authentication/oauth-openshift-8569f45585-t9zrx/Running
+[LOG] openshift-authentication/oauth-openshift-8569f45585-wvbws/Running
+[LOG] openshift-cloud-controller-manager-operator/cluster-cloud-controller-manager-operator-7d85bfc559-qtjz6/Running
+[LOG] openshift-cloud-credential-operator/cloud-credential-operator-8546b5744c-8kcw6/Running
+[LOG] openshift-cloud-credential-operator/pod-identity-webhook-7b6c799878-2jj58/Running
+[LOG] openshift-cloud-credential-operator/pod-identity-webhook-7b6c799878-xcx6r/Running
+[LOG] openshift-cloud-network-config-controller/cloud-network-config-controller-57dfb5484-nncmg/Running
+[LOG] openshift-cluster-csi-drivers/aws-ebs-csi-driver-controller-75bdb74547-4mgjm/Running
+[LOG] openshift-cluster-csi-drivers/aws-ebs-csi-driver-controller-75bdb74547-7wx4c/Running
+[LOG] openshift-cluster-csi-drivers/aws-ebs-csi-driver-node-2bpzm/Running
+[LOG] openshift-cluster-csi-drivers/aws-ebs-csi-driver-node-khgkk/Running
+[LOG] openshift-cluster-csi-drivers/aws-ebs-csi-driver-node-s45dq/Running
+[LOG] openshift-cluster-csi-drivers/aws-ebs-csi-driver-node-t6hgf/Running
+[LOG] openshift-cluster-csi-drivers/aws-ebs-csi-driver-node-tpsjl/Running
+[LOG] openshift-cluster-csi-drivers/aws-ebs-csi-driver-node-w6nc5/Running
+[LOG] openshift-cluster-csi-drivers/aws-ebs-csi-driver-operator-6847cd9f-jbl7j/Running
+[LOG] openshift-cluster-machine-approver/machine-approver-874c4b5b6-gsvcb/Running
+[LOG] openshift-cluster-node-tuning-operator/cluster-node-tuning-operator-f9876d97c-s6jz6/Running
+[LOG] openshift-cluster-node-tuning-operator/tuned-cchfr/Running
+[LOG] openshift-cluster-node-tuning-operator/tuned-jvznq/Running
+[LOG] openshift-cluster-node-tuning-operator/tuned-tt4bn/Running
+[LOG] openshift-cluster-node-tuning-operator/tuned-wnhgx/Running
+[LOG] openshift-cluster-node-tuning-operator/tuned-xp9qw/Running
+[LOG] openshift-cluster-node-tuning-operator/tuned-zj9dd/Running
+[LOG] openshift-cluster-samples-operator/cluster-samples-operator-7f97cd6698-5vcmd/Running
+[LOG] openshift-cluster-storage-operator/cluster-storage-operator-754d6f56b8-4frrc/Running
+[LOG] openshift-cluster-storage-operator/csi-snapshot-controller-9584854bf-6vmrk/Running
+[LOG] openshift-cluster-storage-operator/csi-snapshot-controller-9584854bf-vznpq/Running
+[LOG] openshift-cluster-storage-operator/csi-snapshot-controller-operator-7d99bff4d-f7qnp/Running
+[LOG] openshift-cluster-storage-operator/csi-snapshot-webhook-68694997c6-xjp7l/Running
+[LOG] openshift-cluster-storage-operator/csi-snapshot-webhook-68694997c6-z5l82/Running
+[LOG] openshift-cluster-version/cluster-version-operator-5fbc7b75cc-fg6hr/Running
+[LOG] openshift-config-operator/openshift-config-operator-7794fc8ccd-5zzfz/Running
+[LOG] openshift-console-operator/console-operator-75b68f4466-x896c/Running
+[LOG] openshift-console/console-59545dbfbb-b5ccc/Running
+[LOG] openshift-console/console-59545dbfbb-tdn2d/Running
+[LOG] openshift-console/downloads-78b784cc4d-82mr5/Running
+[LOG] openshift-console/downloads-78b784cc4d-nxr6n/Running
+[LOG] openshift-controller-manager-operator/openshift-controller-manager-operator-589b88b589-g8bb8/Running
+[LOG] openshift-controller-manager/controller-manager-6797597958-46f68/Running
+[LOG] openshift-controller-manager/controller-manager-6797597958-4lnhm/Running
+[LOG] openshift-controller-manager/controller-manager-6797597958-b489s/Running
+[LOG] openshift-dns-operator/dns-operator-58f6c6f864-nxm69/Running
+[LOG] openshift-dns/dns-default-2ffwf/Running
+[LOG] openshift-dns/dns-default-6t2bd/Running
+[LOG] openshift-dns/dns-default-d55jw/Running
+[LOG] openshift-dns/dns-default-d8pqw/Running
+[LOG] openshift-dns/dns-default-l85z8/Running
+[LOG] openshift-dns/dns-default-zksvv/Running
+[LOG] openshift-dns/node-resolver-8qq9w/Running
+[LOG] openshift-dns/node-resolver-9j4hs/Running
+[LOG] openshift-dns/node-resolver-drvr5/Running
+[LOG] openshift-dns/node-resolver-kgcwv/Running
+[LOG] openshift-dns/node-resolver-mf6js/Running
+[LOG] openshift-dns/node-resolver-qlzlm/Running
+[LOG] openshift-etcd-operator/etcd-operator-74cc7479b7-z994z/Running
+[LOG] openshift-etcd/etcd-guard-ip-10-0-128-78.ca-central-1.compute.internal/Running
+[LOG] openshift-etcd/etcd-guard-ip-10-0-137-116.ca-central-1.compute.internal/Running
+[LOG] openshift-etcd/etcd-guard-ip-10-0-146-216.ca-central-1.compute.internal/Running
+[LOG] openshift-etcd/etcd-ip-10-0-128-78.ca-central-1.compute.internal/Running
+[LOG] openshift-etcd/etcd-ip-10-0-137-116.ca-central-1.compute.internal/Running
+[LOG] openshift-etcd/etcd-ip-10-0-146-216.ca-central-1.compute.internal/Running
+[LOG] openshift-etcd/installer-4-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/installer-5-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/installer-5-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/installer-7-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/installer-7-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/installer-7-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/installer-8-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/installer-8-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/installer-8-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/revision-pruner-7-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/revision-pruner-7-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/revision-pruner-7-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/revision-pruner-8-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/revision-pruner-8-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-etcd/revision-pruner-8-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-image-registry/cluster-image-registry-operator-5c8d659cc5-jnmq9/Running
+[LOG] openshift-image-registry/image-registry-696878bffb-44dgl/Running
+[LOG] openshift-image-registry/image-registry-696878bffb-tc7cw/Running
+[LOG] openshift-image-registry/node-ca-2c9sb/Running
+[LOG] openshift-image-registry/node-ca-4fx5t/Running
+[LOG] openshift-image-registry/node-ca-b2qnn/Running
+[LOG] openshift-image-registry/node-ca-c75pl/Running
+[LOG] openshift-image-registry/node-ca-dwhz9/Running
+[LOG] openshift-image-registry/node-ca-qk7nr/Running
+[LOG] openshift-ingress-canary/ingress-canary-75tgm/Running
+[LOG] openshift-ingress-canary/ingress-canary-9v7d9/Running
+[LOG] openshift-ingress-canary/ingress-canary-p7xn7/Running
+[LOG] openshift-ingress-operator/ingress-operator-fbd867bd4-nd4qs/Running
+[LOG] openshift-ingress/router-default-b79c86db-glgbq/Running
+[LOG] openshift-ingress/router-default-b79c86db-pnqx2/Running
+[LOG] openshift-insights/insights-operator-bcc49f96d-s2bw2/Running
+[LOG] openshift-kube-apiserver-operator/kube-apiserver-operator-66c5497cc8-vjp8g/Running
+[LOG] openshift-kube-apiserver/installer-4-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/installer-4-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/installer-6-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/installer-6-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/installer-6-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/installer-7-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/installer-8-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/installer-8-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/installer-8-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/kube-apiserver-guard-ip-10-0-128-78.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-apiserver/kube-apiserver-guard-ip-10-0-137-116.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-apiserver/kube-apiserver-guard-ip-10-0-146-216.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-apiserver/kube-apiserver-ip-10-0-128-78.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-apiserver/kube-apiserver-ip-10-0-137-116.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-apiserver/kube-apiserver-ip-10-0-146-216.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-apiserver/revision-pruner-6-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/revision-pruner-6-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/revision-pruner-6-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/revision-pruner-7-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/revision-pruner-7-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/revision-pruner-7-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/revision-pruner-8-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/revision-pruner-8-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-apiserver/revision-pruner-8-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager-operator/kube-controller-manager-operator-b6fdddd6f-p7kvg/Running
+[LOG] openshift-kube-controller-manager/installer-2-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-2-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-2-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-3-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-3-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-3-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-4-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-4-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-4-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-5-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-5-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-5-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-6-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-6-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/installer-6-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/kube-controller-manager-guard-ip-10-0-128-78.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-controller-manager/kube-controller-manager-guard-ip-10-0-137-116.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-controller-manager/kube-controller-manager-guard-ip-10-0-146-216.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-controller-manager/kube-controller-manager-ip-10-0-128-78.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-controller-manager/kube-controller-manager-ip-10-0-137-116.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-controller-manager/kube-controller-manager-ip-10-0-146-216.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-controller-manager/revision-pruner-6-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/revision-pruner-6-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-controller-manager/revision-pruner-6-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler-operator/openshift-kube-scheduler-operator-7c8cb5446-xbcp5/Running
+[LOG] openshift-kube-scheduler/installer-5-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/installer-5-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/installer-5-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/installer-6-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/installer-6-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/installer-6-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/installer-7-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/installer-7-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/installer-7-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/installer-8-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/installer-8-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/installer-8-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/openshift-kube-scheduler-guard-ip-10-0-128-78.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-scheduler/openshift-kube-scheduler-guard-ip-10-0-137-116.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-scheduler/openshift-kube-scheduler-guard-ip-10-0-146-216.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-scheduler/openshift-kube-scheduler-ip-10-0-128-78.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-scheduler/openshift-kube-scheduler-ip-10-0-137-116.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-scheduler/openshift-kube-scheduler-ip-10-0-146-216.ca-central-1.compute.internal/Running
+[LOG] openshift-kube-scheduler/revision-pruner-6-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/revision-pruner-6-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/revision-pruner-6-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/revision-pruner-7-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/revision-pruner-7-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/revision-pruner-7-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/revision-pruner-8-ip-10-0-128-78.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/revision-pruner-8-ip-10-0-137-116.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-scheduler/revision-pruner-8-ip-10-0-146-216.ca-central-1.compute.internal/Succeeded
+[LOG] openshift-kube-storage-version-migrator-operator/kube-storage-version-migrator-operator-5886f9d9c4-bphvs/Running
+[LOG] openshift-kube-storage-version-migrator/migrator-5db899446d-fzzp2/Running
+[LOG] openshift-machine-api/cluster-autoscaler-operator-64c6945d46-zm4xs/Running
+[LOG] openshift-machine-api/cluster-baremetal-operator-67cd754774-kxrb5/Running
+[LOG] openshift-machine-api/control-plane-machine-set-operator-584746b655-hkm5t/Running
+[LOG] openshift-machine-api/machine-api-controllers-5b89cf5ff8-z8k2f/Running
+[LOG] openshift-machine-api/machine-api-operator-7474957984-7qzrb/Running
+[LOG] openshift-machine-config-operator/machine-config-controller-767846fc4c-wsr79/Running
+[LOG] openshift-machine-config-operator/machine-config-daemon-2m9qv/Running
+[LOG] openshift-machine-config-operator/machine-config-daemon-8kgjd/Running
+[LOG] openshift-machine-config-operator/machine-config-daemon-c7bvn/Running
+[LOG] openshift-machine-config-operator/machine-config-daemon-f8pmm/Running
+[LOG] openshift-machine-config-operator/machine-config-daemon-hpqd7/Running
+[LOG] openshift-machine-config-operator/machine-config-daemon-l9tzn/Running
+[LOG] openshift-machine-config-operator/machine-config-operator-7987b6bcdd-42m2q/Running
+[LOG] openshift-machine-config-operator/machine-config-server-8q9t8/Running
+[LOG] openshift-machine-config-operator/machine-config-server-hkdpw/Running
+[LOG] openshift-machine-config-operator/machine-config-server-q7x6x/Running
+[LOG] openshift-marketplace/0c3ef8a3fc8bdd43a36ae2a0253db16df3e8cfa7197dc0a468d6e590a2rzrtg/Succeeded
+[LOG] openshift-marketplace/4416ec14787ef7cef820a19ab67e6097c929494a7a562289f75a63ab5dzmjst/Succeeded
+[LOG] openshift-marketplace/a00d1bc5b09cbea2765eb497bca951f1f284d5665b7278e968cb147381n8dnw/Succeeded
+[LOG] openshift-marketplace/certified-operators-9s97z/Running
+[LOG] openshift-marketplace/certified-operators-trdnl/Running
+[LOG] openshift-marketplace/community-operators-7tzgd/Running
+[LOG] openshift-marketplace/marketplace-operator-6dcf8f6556-cswtk/Running
+[LOG] openshift-marketplace/redhat-marketplace-z8cp2/Running
+[LOG] openshift-marketplace/redhat-operators-tlc9n/Running
+[LOG] openshift-monitoring/alertmanager-main-0/Running
+[LOG] openshift-monitoring/alertmanager-main-1/Running
+[LOG] openshift-monitoring/cluster-monitoring-operator-7bd79c884d-nzvv6/Running
+[LOG] openshift-monitoring/kube-state-metrics-84dd57c4df-qh5jp/Running
+[LOG] openshift-monitoring/node-exporter-4jt7s/Running
+[LOG] openshift-monitoring/node-exporter-55hsg/Running
+[LOG] openshift-monitoring/node-exporter-g79vs/Running
+[LOG] openshift-monitoring/node-exporter-njp29/Running
+[LOG] openshift-monitoring/node-exporter-tlpn7/Running
+[LOG] openshift-monitoring/node-exporter-v427k/Running
+[LOG] openshift-monitoring/openshift-state-metrics-87485d769-2pfrv/Running
+[LOG] openshift-monitoring/prometheus-adapter-84f47d8966-2dlqp/Running
+[LOG] openshift-monitoring/prometheus-adapter-84f47d8966-7zkhq/Running
+[LOG] openshift-monitoring/prometheus-k8s-0/Running
+[LOG] openshift-monitoring/prometheus-k8s-1/Running
+[LOG] openshift-monitoring/prometheus-operator-5c59544657-vvbq5/Running
+[LOG] openshift-monitoring/prometheus-operator-admission-webhook-58f7f489c4-fmtph/Running
+[LOG] openshift-monitoring/prometheus-operator-admission-webhook-58f7f489c4-sbzdv/Running
+[LOG] openshift-monitoring/telemeter-client-795989795f-7wjl5/Running
+[LOG] openshift-monitoring/thanos-querier-69854c88bf-2rdmk/Running
+[LOG] openshift-monitoring/thanos-querier-69854c88bf-78bq9/Running
+[LOG] openshift-multus/multus-8f4b4/Running
+[LOG] openshift-multus/multus-9qxwd/Running
+[LOG] openshift-multus/multus-9xt4z/Running
+[LOG] openshift-multus/multus-additional-cni-plugins-77r7x/Running
+[LOG] openshift-multus/multus-additional-cni-plugins-7fkz5/Running
+[LOG] openshift-multus/multus-additional-cni-plugins-d9d2g/Running
+[LOG] openshift-multus/multus-additional-cni-plugins-gll7g/Running
+[LOG] openshift-multus/multus-additional-cni-plugins-gwdr9/Running
+[LOG] openshift-multus/multus-additional-cni-plugins-v9tct/Running
+[LOG] openshift-multus/multus-admission-controller-7c55784bbf-49brt/Running
+[LOG] openshift-multus/multus-admission-controller-7c55784bbf-mj47h/Running
+[LOG] openshift-multus/multus-npmcc/Running
+[LOG] openshift-multus/multus-pkzkx/Running
+[LOG] openshift-multus/multus-wgb6b/Running
+[LOG] openshift-multus/network-metrics-daemon-dqzhf/Running
+[LOG] openshift-multus/network-metrics-daemon-jn2q4/Running
+[LOG] openshift-multus/network-metrics-daemon-nlfvl/Running
+[LOG] openshift-multus/network-metrics-daemon-nnp9t/Running
+[LOG] openshift-multus/network-metrics-daemon-vslcb/Running
+[LOG] openshift-multus/network-metrics-daemon-w64jr/Running
+[LOG] openshift-network-diagnostics/network-check-source-7f8d955c9d-9vzjf/Running
+[LOG] openshift-network-diagnostics/network-check-target-48lk2/Running
+[LOG] openshift-network-diagnostics/network-check-target-lvdjf/Running
+[LOG] openshift-network-diagnostics/network-check-target-rrgdm/Running
+[LOG] openshift-network-diagnostics/network-check-target-sp9g9/Running
+[LOG] openshift-network-diagnostics/network-check-target-tmj7j/Running
+[LOG] openshift-network-diagnostics/network-check-target-zx7dp/Running
+[LOG] openshift-network-operator/network-operator-58794dbd64-vmcqb/Running
+[LOG] openshift-nfd/nfd-controller-manager-645cd79bb7-znpgb/Running
+[LOG] openshift-nfd/nfd-master-5868f98d6f-7mq8l/Running
+[LOG] openshift-nfd/nfd-worker-7htrm/Running
+[LOG] openshift-nfd/nfd-worker-9xfwj/Running
+[LOG] openshift-nfd/nfd-worker-pd5hq/Running
+[LOG] openshift-oauth-apiserver/apiserver-5cdfd4f479-4lj97/Running
+[LOG] openshift-oauth-apiserver/apiserver-5cdfd4f479-ck5qc/Running
+[LOG] openshift-oauth-apiserver/apiserver-5cdfd4f479-z8zkw/Running
+[LOG] openshift-operator-lifecycle-manager/catalog-operator-74567567b6-blwtw/Running
+[LOG] openshift-operator-lifecycle-manager/collect-profiles-28465305-g85nq/Succeeded
+[LOG] openshift-operator-lifecycle-manager/collect-profiles-28465320-r6n8h/Succeeded
+[LOG] openshift-operator-lifecycle-manager/collect-profiles-28465335-dk8g9/Succeeded
+[LOG] openshift-operator-lifecycle-manager/olm-operator-69ff6c9444-gslzs/Running
+[LOG] openshift-operator-lifecycle-manager/package-server-manager-6b9ccb565f-dlpcv/Running
+[LOG] openshift-operator-lifecycle-manager/packageserver-65cf66bf9b-j8lb2/Running
+[LOG] openshift-operator-lifecycle-manager/packageserver-65cf66bf9b-t6tx5/Running
+[LOG] openshift-ovn-kubernetes/ovnkube-master-24khr/Running
+[LOG] openshift-ovn-kubernetes/ovnkube-master-5cs4l/Running
+[LOG] openshift-ovn-kubernetes/ovnkube-master-9qv8j/Running
+[LOG] openshift-ovn-kubernetes/ovnkube-node-475q7/Running
+[LOG] openshift-ovn-kubernetes/ovnkube-node-6xr64/Running
+[LOG] openshift-ovn-kubernetes/ovnkube-node-9tvhx/Running
+[LOG] openshift-ovn-kubernetes/ovnkube-node-bfdjg/Running
+[LOG] openshift-ovn-kubernetes/ovnkube-node-m5hz7/Running
+[LOG] openshift-ovn-kubernetes/ovnkube-node-v5pfb/Running
+[LOG] openshift-route-controller-manager/route-controller-manager-d9fc555ff-9ltqc/Running
+[LOG] openshift-route-controller-manager/route-controller-manager-d9fc555ff-chrn4/Running
+[LOG] openshift-route-controller-manager/route-controller-manager-d9fc555ff-xjwkh/Running
+[LOG] openshift-serverless/knative-openshift-644c59b-kspwp/Running
+[LOG] openshift-serverless/knative-openshift-ingress-7cd95b5b7b-5c992/Running
+[LOG] openshift-serverless/knative-operator-webhook-64d64b7f7d-qt442/Running
+[LOG] openshift-service-ca-operator/service-ca-operator-7bd94cf7b5-t82g4/Running
+[LOG] openshift-service-ca/service-ca-857cbb9846-5dqfb/Running
+[LOG] runai-preinstall-diagnostics/runai-preinstall-diagnostics-jjzpd/Pending
+[LOG] runai-preinstall-diagnostics/runai-preinstall-diagnostics-jmcgz/Pending
+[LOG] runai-preinstall-diagnostics/runai-preinstall-diagnostics-pftk7/Pending
+[LOG] runai-preinstall-diagnostics/runai-preinstall-diagnostics-pxk6c/Pending
+[LOG] runai-preinstall-diagnostics/runai-preinstall-diagnostics-sprsq/Pending
+[LOG] runai-preinstall-diagnostics/runai-preinstall-diagnostics-wjjpb/Pending
+[32m[PASS][0m
+
+[34m[TEST] GPU Nodes[0m
+--------------------------------------------------
+[LOG] Node name: ip-10-0-152-41.ca-central-1.compute.internal
+[LOG] Node name: ip-10-0-164-210.ca-central-1.compute.internal
+[LOG] Node name: ip-10-0-169-87.ca-central-1.compute.internal
+[LOG] please verify that the list above includes all GPU nodes in the cluster
+[LOG] if you suspect GPU nodes are missing from the list above, gpu-feature-discovery might be malfunctioning
+[32m[PASS][0m
+
+[34m[TEST] Nginx Ingress Controller[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] Prometheus check[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] Storage Classes[0m
+--------------------------------------------------
+[LOG] StorageClasses in cluster:
+[LOG] 	gp2-csi
+[LOG] 	gp3-csi
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Helm Repository[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+
+[34m[TEST] running internal cluster tests using image gcr.io/run-ai-lab/preinstall-diagnostics:v2.16.6...[0m
+--------------------------------------------------
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] all daemonset pods are available
+[LOG] logs for [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] are not ready yet, retrying in 5 seconds...
+[LOG] logs for [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] are not ready yet, retrying in 5 seconds...
+
+========================== LOGS FROM NODE ip-10-0-152-41.ca-central-1.compute.internal ==========================
+
+Logs for [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]:
+[LOG] initializing Kubernetes client...
+[LOG] successfully initialized Kubernetes client
+
+[34m[TEST] Run:AI service access: https://app.run.ai[0m
+--------------------------------------------------
+[LOG] Run:AI service is accessible from within the cluster
+[32m[PASS][0m
+
+[34m[TEST] DNS Servers access[0m
+--------------------------------------------------
+[LOG] Address for [app.run.ai] is [104.21.95.156], resolved by [1.1.1.1:53]
+[LOG] Address for [app.run.ai] is [104.21.95.156], resolved by [8.8.8.8:53]
+[32m[PASS][0m
+
+[34m[TEST] DNS Resolver[0m
+--------------------------------------------------
+[33m[WARNING] Backend FQDN was not provided using the --domain flag, skipping test[0m
+[33m[SKIP][0m
+[32m[PASS][0m
+
+[34m[TEST] Print resolv.conf[0m
+--------------------------------------------------
+[LOG] search runai-preinstall-diagnostics.svc.cluster.local svc.cluster.local cluster.local ca-central-1.compute.internal
+nameserver 172.30.0.10
+options ndots:5
+
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Prometheus[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Auth Provider[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] OS Information[0m
+--------------------------------------------------
+[LOG] Os Info: Linux runai-preinstall-diagnostics-jjzpd 5.14.0-284.25.1.el9_2.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Jul 20 09:11:28 EDT 2023 x86_64 GNU/Linux
+
+[32m[PASS][0m
+
+[34m[TEST] Node connectivity check[0m
+--------------------------------------------------
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] all daemonset pods are available
+[LOG] attempting to ping pod [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]...
+[LOG] [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] -> [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]: successfully pinged
+[LOG] [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] -> [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]...
+[LOG] [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] -> [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]: successfully pinged
+[LOG] [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] -> [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]...
+[LOG] [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] -> [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]: successfully pinged
+[LOG] [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] -> [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]...
+[LOG] [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] -> [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]: successfully pinged
+[LOG] [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] -> [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]...
+[LOG] [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] -> [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]: successfully pinged
+[LOG] [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] -> [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]...
+[LOG] [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] -> [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]: successfully pinged
+[LOG] [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd] -> [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]: node clocks are in sync
+[32m[PASS][0m
+[32m[COMPLETE][0m
+
+
+========================== LOGS FROM NODE ip-10-0-169-87.ca-central-1.compute.internal ==========================
+
+Logs for [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]:
+[LOG] initializing Kubernetes client...
+[LOG] successfully initialized Kubernetes client
+
+[34m[TEST] Run:AI service access: https://app.run.ai[0m
+--------------------------------------------------
+[LOG] Run:AI service is accessible from within the cluster
+[32m[PASS][0m
+
+[34m[TEST] DNS Servers access[0m
+--------------------------------------------------
+[LOG] Address for [app.run.ai] is [172.67.145.177], resolved by [1.1.1.1:53]
+[LOG] Address for [app.run.ai] is [172.67.145.177], resolved by [8.8.8.8:53]
+[32m[PASS][0m
+
+[34m[TEST] DNS Resolver[0m
+--------------------------------------------------
+[33m[WARNING] Backend FQDN was not provided using the --domain flag, skipping test[0m
+[33m[SKIP][0m
+[32m[PASS][0m
+
+[34m[TEST] Print resolv.conf[0m
+--------------------------------------------------
+[LOG] search runai-preinstall-diagnostics.svc.cluster.local svc.cluster.local cluster.local ca-central-1.compute.internal
+nameserver 172.30.0.10
+options ndots:5
+
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Prometheus[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Auth Provider[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] OS Information[0m
+--------------------------------------------------
+[LOG] Os Info: Linux runai-preinstall-diagnostics-jmcgz 5.14.0-284.25.1.el9_2.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Jul 20 09:11:28 EDT 2023 x86_64 GNU/Linux
+
+[32m[PASS][0m
+
+[34m[TEST] Node connectivity check[0m
+--------------------------------------------------
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] all daemonset pods are available
+[LOG] attempting to ping pod [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]...
+[LOG] [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz] -> [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]: successfully pinged
+[LOG] [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz] -> [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]...
+[LOG] [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz] -> [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]: successfully pinged
+[LOG] [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz] -> [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]...
+[LOG] [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz] -> [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]: successfully pinged
+[LOG] [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz] -> [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]...
+[LOG] [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz] -> [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]: successfully pinged
+[LOG] [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz] -> [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]...
+[LOG] [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz] -> [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]: successfully pinged
+[LOG] [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz] -> [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]...
+[LOG] [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz] -> [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]: successfully pinged
+[LOG] [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz] -> [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]: node clocks are in sync
+[32m[PASS][0m
+[32m[COMPLETE][0m
+
+
+========================== LOGS FROM NODE ip-10-0-128-78.ca-central-1.compute.internal ==========================
+
+Logs for [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]:
+[LOG] initializing Kubernetes client...
+[LOG] successfully initialized Kubernetes client
+
+[34m[TEST] Run:AI service access: https://app.run.ai[0m
+--------------------------------------------------
+[LOG] Run:AI service is accessible from within the cluster
+[32m[PASS][0m
+
+[34m[TEST] DNS Servers access[0m
+--------------------------------------------------
+[LOG] Address for [app.run.ai] is [172.67.145.177], resolved by [1.1.1.1:53]
+[LOG] Address for [app.run.ai] is [172.67.145.177], resolved by [8.8.8.8:53]
+[32m[PASS][0m
+
+[34m[TEST] DNS Resolver[0m
+--------------------------------------------------
+[33m[WARNING] Backend FQDN was not provided using the --domain flag, skipping test[0m
+[33m[SKIP][0m
+[32m[PASS][0m
+
+[34m[TEST] Print resolv.conf[0m
+--------------------------------------------------
+[LOG] search runai-preinstall-diagnostics.svc.cluster.local svc.cluster.local cluster.local ca-central-1.compute.internal
+nameserver 172.30.0.10
+options ndots:5
+
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Prometheus[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Auth Provider[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] OS Information[0m
+--------------------------------------------------
+[LOG] Os Info: Linux runai-preinstall-diagnostics-pftk7 5.14.0-284.25.1.el9_2.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Jul 20 09:11:28 EDT 2023 x86_64 GNU/Linux
+
+[32m[PASS][0m
+
+[34m[TEST] Node connectivity check[0m
+--------------------------------------------------
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] all daemonset pods are available
+[LOG] attempting to ping pod [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]...
+[LOG] [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7] -> [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]: successfully pinged
+[LOG] [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7] -> [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]...
+[LOG] [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7] -> [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]: successfully pinged
+[LOG] [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7] -> [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]...
+[LOG] [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7] -> [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]: successfully pinged
+[LOG] [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7] -> [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]...
+[LOG] [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7] -> [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]: successfully pinged
+[LOG] [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7] -> [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]...
+[LOG] [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7] -> [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]: successfully pinged
+[LOG] [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7] -> [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]...
+[LOG] [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7] -> [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]: successfully pinged
+[LOG] [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7] -> [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]: node clocks are in sync
+[32m[PASS][0m
+[32m[COMPLETE][0m
+
+
+========================== LOGS FROM NODE ip-10-0-137-116.ca-central-1.compute.internal ==========================
+
+Logs for [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]:
+[LOG] initializing Kubernetes client...
+[LOG] successfully initialized Kubernetes client
+
+[34m[TEST] Run:AI service access: https://app.run.ai[0m
+--------------------------------------------------
+[LOG] Run:AI service is accessible from within the cluster
+[32m[PASS][0m
+
+[34m[TEST] DNS Servers access[0m
+--------------------------------------------------
+[LOG] Address for [app.run.ai] is [172.67.145.177], resolved by [1.1.1.1:53]
+[LOG] Address for [app.run.ai] is [172.67.145.177], resolved by [8.8.8.8:53]
+[32m[PASS][0m
+
+[34m[TEST] DNS Resolver[0m
+--------------------------------------------------
+[33m[WARNING] Backend FQDN was not provided using the --domain flag, skipping test[0m
+[33m[SKIP][0m
+[32m[PASS][0m
+
+[34m[TEST] Print resolv.conf[0m
+--------------------------------------------------
+[LOG] search runai-preinstall-diagnostics.svc.cluster.local svc.cluster.local cluster.local ca-central-1.compute.internal
+nameserver 172.30.0.10
+options ndots:5
+
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Prometheus[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Auth Provider[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] OS Information[0m
+--------------------------------------------------
+[LOG] Os Info: Linux runai-preinstall-diagnostics-pxk6c 5.14.0-284.25.1.el9_2.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Jul 20 09:11:28 EDT 2023 x86_64 GNU/Linux
+
+[32m[PASS][0m
+
+[34m[TEST] Node connectivity check[0m
+--------------------------------------------------
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] all daemonset pods are available
+[LOG] attempting to ping pod [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]...
+[LOG] [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c] -> [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]: successfully pinged
+[LOG] [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c] -> [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]...
+[LOG] [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c] -> [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]: successfully pinged
+[LOG] [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c] -> [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]...
+[LOG] [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c] -> [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]: successfully pinged
+[LOG] [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c] -> [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]...
+[LOG] [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c] -> [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]: successfully pinged
+[LOG] [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c] -> [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]...
+[LOG] [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c] -> [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]: successfully pinged
+[LOG] [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c] -> [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]...
+[LOG] [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c] -> [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]: successfully pinged
+[LOG] [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c] -> [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]: node clocks are in sync
+[32m[PASS][0m
+[32m[COMPLETE][0m
+
+
+========================== LOGS FROM NODE ip-10-0-146-216.ca-central-1.compute.internal ==========================
+
+Logs for [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]:
+[LOG] initializing Kubernetes client...
+[LOG] successfully initialized Kubernetes client
+
+[34m[TEST] Run:AI service access: https://app.run.ai[0m
+--------------------------------------------------
+[LOG] Run:AI service is accessible from within the cluster
+[32m[PASS][0m
+
+[34m[TEST] DNS Servers access[0m
+--------------------------------------------------
+[LOG] Address for [app.run.ai] is [172.67.145.177], resolved by [1.1.1.1:53]
+[LOG] Address for [app.run.ai] is [104.21.95.156], resolved by [8.8.8.8:53]
+[32m[PASS][0m
+
+[34m[TEST] DNS Resolver[0m
+--------------------------------------------------
+[33m[WARNING] Backend FQDN was not provided using the --domain flag, skipping test[0m
+[33m[SKIP][0m
+[32m[PASS][0m
+
+[34m[TEST] Print resolv.conf[0m
+--------------------------------------------------
+[LOG] search runai-preinstall-diagnostics.svc.cluster.local svc.cluster.local cluster.local ca-central-1.compute.internal
+nameserver 172.30.0.10
+options ndots:5
+
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Prometheus[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Auth Provider[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] OS Information[0m
+--------------------------------------------------
+[LOG] Os Info: Linux runai-preinstall-diagnostics-sprsq 5.14.0-284.25.1.el9_2.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Jul 20 09:11:28 EDT 2023 x86_64 GNU/Linux
+
+[32m[PASS][0m
+
+[34m[TEST] Node connectivity check[0m
+--------------------------------------------------
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] all daemonset pods are available
+[LOG] attempting to ping pod [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]...
+[LOG] [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq] -> [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]: successfully pinged
+[LOG] [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq] -> [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]...
+[LOG] [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq] -> [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]: successfully pinged
+[LOG] [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq] -> [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]...
+[LOG] [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq] -> [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]: successfully pinged
+[LOG] [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq] -> [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]...
+[LOG] [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq] -> [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]: successfully pinged
+[LOG] [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq] -> [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]...
+[LOG] [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq] -> [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]: successfully pinged
+[LOG] [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq] -> [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]...
+[LOG] [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq] -> [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]: successfully pinged
+[LOG] [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq] -> [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]: node clocks are in sync
+[32m[PASS][0m
+[32m[COMPLETE][0m
+
+
+========================== LOGS FROM NODE ip-10-0-164-210.ca-central-1.compute.internal ==========================
+
+Logs for [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]:
+[LOG] initializing Kubernetes client...
+[LOG] successfully initialized Kubernetes client
+
+[34m[TEST] Run:AI service access: https://app.run.ai[0m
+--------------------------------------------------
+[LOG] Run:AI service is accessible from within the cluster
+[32m[PASS][0m
+
+[34m[TEST] DNS Servers access[0m
+--------------------------------------------------
+[LOG] Address for [app.run.ai] is [104.21.95.156], resolved by [1.1.1.1:53]
+[LOG] Address for [app.run.ai] is [104.21.95.156], resolved by [8.8.8.8:53]
+[32m[PASS][0m
+
+[34m[TEST] DNS Resolver[0m
+--------------------------------------------------
+[33m[WARNING] Backend FQDN was not provided using the --domain flag, skipping test[0m
+[33m[SKIP][0m
+[32m[PASS][0m
+
+[34m[TEST] Print resolv.conf[0m
+--------------------------------------------------
+[LOG] search runai-preinstall-diagnostics.svc.cluster.local svc.cluster.local cluster.local ca-central-1.compute.internal
+nameserver 172.30.0.10
+options ndots:5
+
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Prometheus[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] Run:AI Auth Provider[0m
+--------------------------------------------------
+[32m[PASS][0m
+
+[34m[TEST] OS Information[0m
+--------------------------------------------------
+[LOG] Os Info: Linux runai-preinstall-diagnostics-wjjpb 5.14.0-284.25.1.el9_2.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Jul 20 09:11:28 EDT 2023 x86_64 GNU/Linux
+
+[32m[PASS][0m
+
+[34m[TEST] Node connectivity check[0m
+--------------------------------------------------
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [0/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] not all pods are ready [3/6], retrying in 5 seconds
+[LOG] all daemonset pods are available
+[LOG] attempting to ping pod [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]...
+[LOG] [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb] -> [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]: successfully pinged
+[LOG] [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb] -> [ip-10-0-152-41.ca-central-1.compute.internal/runai-preinstall-diagnostics-jjzpd]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]...
+[LOG] [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb] -> [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]: successfully pinged
+[LOG] [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb] -> [ip-10-0-169-87.ca-central-1.compute.internal/runai-preinstall-diagnostics-jmcgz]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]...
+[LOG] [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb] -> [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]: successfully pinged
+[LOG] [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb] -> [ip-10-0-128-78.ca-central-1.compute.internal/runai-preinstall-diagnostics-pftk7]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]...
+[LOG] [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb] -> [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]: successfully pinged
+[LOG] [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb] -> [ip-10-0-137-116.ca-central-1.compute.internal/runai-preinstall-diagnostics-pxk6c]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]...
+[LOG] [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb] -> [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]: successfully pinged
+[LOG] [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb] -> [ip-10-0-146-216.ca-central-1.compute.internal/runai-preinstall-diagnostics-sprsq]: node clocks are in sync
+[LOG] attempting to ping pod [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]...
+[LOG] [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb] -> [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]: successfully pinged
+[LOG] [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb] -> [ip-10-0-164-210.ca-central-1.compute.internal/runai-preinstall-diagnostics-wjjpb]: node clocks are in sync
+[32m[PASS][0m
+[32m[COMPLETE][0m
+
+cleaning up...
+waiting for all resources to be deleted...
+all resources were successfully deleted
